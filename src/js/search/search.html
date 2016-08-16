@@ -1,0 +1,27 @@
+<!-- Search Start -->
+<div class="row">
+  <div class="col-xs-12">
+    <form ng-submit="search.getMovieRes(title)">
+      <div class="input-group">
+        <input type="text" class="form-control" ng-model="title">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="submit">Go!</button>
+        </span>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Search End -->
+<pre>{{ search.movieList | json}}</pre>
+<!-- Repeat Panel Start -->
+<div class="row">
+  <div class="col-xs-12 col-sm-4">
+    <div class="panel panel-default" ng-repeat="movie in search.movieList">
+      <div class="panel-heading">
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Repeat Panel End -->

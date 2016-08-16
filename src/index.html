@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="movieFinderApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Finder</title>
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+<!-- endbower -->
+
+<!-- inject:css -->
+<!-- endinject -->
+</head>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="jumbotron text-center">
+			<h1>Now showing: You are a Movie Nerd</h1>
+		</div>
+	</div>
+  <!-- Search Bar End -->
+  <div class="row">
+  	<div class="col-xs-12">
+  		<div ui-view></div>
+		</div>
+	</div>
+</div>
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<!-- endbower -->
+<!-- inject:js -->
+<script src="js/app.js"></script>
+<script src="js/core/movie.factory.js"></script>
+<script src="js/search/search.controller.js"></script>
+<!-- endinject -->
+</body>
+</html>
