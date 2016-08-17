@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
 <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
 <!-- endbower -->
+<link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
 
 <!-- inject:css -->
 <link rel="stylesheet" href="css/style.css">
@@ -16,11 +17,9 @@
 <body>
 <div class="container">
 	<div class="row">
-		<div class="jumbotron text-center">
-			<h1>Now showing: You are a Movie Nerd</h1>
-		</div>
+			<h1 class="text-right">Pusheen Watches Movies</h1>
 	</div>
-  <!-- Search Bar End -->
+
   <div class="row">
   	<div class="col-xs-12">
   		<div ui-view></div>
@@ -37,6 +36,7 @@
 <!-- inject:js -->
 <script src="js/app.js"></script>
 <script src="js/core/movie.factory.js"></script>
+<script src="js/detail/detail.controller.js"></script>
 <script src="js/search/search.controller.js"></script>
 <!-- endinject -->
 </body>

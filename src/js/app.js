@@ -14,7 +14,7 @@
                controller: 'SearchController as search'
            })
            .state('detail', {
-               url: '/detail',
+               url: '/detail/:imdbCode',
                templateUrl: '/js/detail/detail.html',
                controller: 'DetailController as detail'            
            })

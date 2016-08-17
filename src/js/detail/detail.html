@@ -1,0 +1,22 @@
+<hr>
+<div class="row well">
+		<div class="col-xs-12 col-md-7">
+			<img id = "angrycat" src="http://i819.photobucket.com/albums/zz119/foxydolls2/Pusheen%20Cat/4_zps2f7b2d26.png">
+			<img ng-src={{detail.movie.Poster}}>
+			<img id = "happycat" src="http://66.media.tumblr.com/88a567fb6359425425b9ea76dfcd23f9/tumblr_inline_nvkacaBnYh1sotnhf_400.png">
+		</div>
+		<div class="col-xs-12 col-md-5">
+			<div class="panel panel-default">
+
+				<div class="panel-body">
+					<h3 class="text-center">{{detail.movie.Title}}</h3>	
+					<p><strong>Director:</strong> {{detail.movie.Director}}</p>
+					<p><strong></strong> {{detail.movie.Year}} | {{detail.movie.Runtime}} | {{detail.movie.Rated}}</p>
+					<p ><strong>Plot:</strong> {{detail.movie.Plot}}</p>
+					<p><strong>Rotten Tomato Rating:</strong> {{detail.movie.tomatoRating}} / 10
+					</p>
+					<a ui-sref="search">Back to Search</a>
+				</div>
+			</div>
+		</div>
+</div>

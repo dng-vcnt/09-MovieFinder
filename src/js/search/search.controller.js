@@ -6,7 +6,8 @@
         .controller('SearchController', SearchController);
 
     SearchController.$inject = ['movieFactory',
-                                '$stateParams'];
+                                '$stateParams'
+                                ];
 
     /* @ngInject */
     function SearchController(movieFactory, $stateParams) {
@@ -16,16 +17,16 @@
         vm.getMovieRes = getMovieRes;
 
         ////////////////
-
+        // Retrieve search data from OMDB API
         function getMovieRes(title) {
-            var promise = movieFactory.getMovieData(title);
+            var promise = movieFactory.getMovieSearch(title);
             promise.then(
                 function(data) {
                     vm.movieList = data;
                     console.log(vm.movieList);
                 },
                 function(err) {
-                    toastr.error(error);
+                    console.log(err);
                 }
             );
         }

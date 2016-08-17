@@ -1,4 +1,66 @@
-.setSize {
+body{
+	background-color: #F3DECB;
+}
+
+h1 {
+	background-color: #C0F6DF;
+	background-image: url('http://forum.lowyat.net/uploads//avatars/av-559861-1383053737.png');
+	background-repeat: no-repeat;
+	border-left: solid 40px #C0F6DF;
+	border-top: solid 50px #C0F6DF;
+	height: 200px;
+	width: 100%;
+	padding-top: 30px;
+	padding-right: 40px;
+	text-align: right;
+	border-radius: 25px;
+	font-family: 'Sigmar One', cursive;
+	font-size: 350%;
+}
+
+#releaseDate{
+		font-family: 'Sigmar One', cursive;
+		font-size: 150%;
+}
+
+#angrycat{
+	margin-left: -74px;
+	margin-right: -80px;
+}
+
+#happycat{
+	height: 158px;
+	width: auto;
+}
+
+.well {
+	border-radius: 25px;
+	background-color: #FCB0CA;
+
+}
+
+.panel-default > .panel-heading-custom {
+	background-color: #CAB8F6;
+	color: white;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	height: 50px;
+
+}
+
+.panel-default {
+	background-color: #B5F0F8;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.setImgSize {
 	height: 400px;
 	width: 300px;
 }
+
+
+
+

@@ -12,18 +12,22 @@
   </div>
 </div>
 <!-- Search End -->
-
+<hr>
 <!-- Repeat Panel Start -->
 <div class="row">
   <div class="col-xs-12 col-sm-4" ng-repeat="movie in search.movieList.Search">
     <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">{{movie.Title}}</h3>
+      <div class="panel-heading panel-heading-custom">
+        <h4 class="panel-title">{{movie.Title}}</h4>
       </div>
       <div class="panel-body">
         <div class="row">
           <div class="col-xs-12 text-center">
-            <img ng-src="{{movie.Poster}}" class="setSize">
+            <img ng-src="{{movie.Poster}}" class="setImgSize">
+            <hr>
+            <p id="releaseDate">Released in {{movie.Year}}</p>
+            <a ui-sref="detail({ imdbCode: movie.imdbID })">
+            Go to Movie Details</a>
           </div>
         </div>
       </div>
@@ -31,4 +35,3 @@
   </div>
 </div>
 <!-- Repeat Panel End -->
-<pre>{{ search.movieList | json}}</pre>
